@@ -1,0 +1,14 @@
+{% extends "pages/base.html" %}
+
+{% block title %}
+cc
+{% endblock %}
+
+{% block content %}
+
+{% for post in Post %}
+    <h4>{{post.date|date:"d-m-Y"}}<a href="/pages/{{post.id}}">{{post.title}} - {{post.body}}</a></h4>
+{% endfor %}
+
+
+{% endblock %}

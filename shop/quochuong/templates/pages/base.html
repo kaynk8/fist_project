@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/category.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <title>{% block title %} Quốc Hương {% endblock %}</title>
+</head>
+
+<body>
+    <nav class="py-2 bg-white border-bottom" style="background: #ffffff;">
+        <div class="container d-flex flex-wrap" >
+           <ul class="nav me-auto" >
+              <li class="nav-item"><a href="/" class="nav-link link-dark px-2 active" aria-current="page">Trang Chủ</a></li>
+              <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">Danh mục</a></li>
+              <li class="nav-item"><a href="/tutorial" class="nav-link link-dark px-2">Hướng dẫn</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Đặt hàng</a></li>
+              <li class="nav-item"><a href="/contact" class="nav-link link-dark px-2">Liên hệ</a></li>
+           </ul>
+           <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Đăng nhập</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Đăng kí</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Giỏ hàng</a></li>
+           </ul>
+        </div>
+     </nav>
+
+  
+     <div class="page">
+  
+        <header class="page-header"
+            style="background-image:url('https://lh3.googleusercontent.com/cAz3Blgc5k_VuNx8RE-oKD31QrYShrUfSA92l9Y_7AM9WwcnVeG4AfCmx7_uUq6_gdJBDP5I6q-YarPixD-7-S9-71ADAKXuM3L5liyJuEG4Z8CUTGl3EbMHdkHgLQWLfLR-olCFWbLFOLguFpGUa1RBG3YwVHzd4WW8iT34MzMPmA2i5m5kZ-G4ePvJo7mUXoQrJpUCuflMtzR6mVjdb1A7a2PLCTOm1_VCT3JArrcWIVBdk7_Bmt3eO4_hTpG4YPplNVB334gCHTSB2X-1X5prEXh6r5D5mgsX1V0113C1eqJVfpxUa1oWPjyNb3u29ESfHteab1iE3gaLXH06d44-xVHRJgncILRCdrlnV4xqMWc8DV68IgqR6QMF7OtLSaIbf5yFEB3F4qgZ7Kaq2uBntfAsHmjnd2sBQ2hWuXViGfsEiuJMqEGRh-CHzLk7PeHu88A2oDf6l9HYpIsrMJXHl1v7aSFc8YAV7GC69KbJR5I_VCwoHFuM5yAxUSbAEQO7ZYNKRWp7Pu-u1OOXnZTHw9pJhf8UVJykCLfXSeYaJJ29olzjH1i-Nur8qAzARjT2i8DEYykFzHMSssmRjddUx1ln2TUuvMxNY5VA1b-nAYXQOfWfTRmzU2e7fmkImYGmvc7fE38L9tP91YKlXBEJb-ru4Ygvp3tv1C3OJA42EDD_1xK2xQv_KrHyYa-06HPSwBbp6MHKUVIB-UNh9kjQ1xkj6eIy31RaJe5kHnNLrEXpatIqXkdEwBddpTvV06Z95-Be1Rlt6P3oC2677-mGeMcQrlXv5YcTMCRepp6y9tWUHIAqQWM9e1Htsoevisub=w960-h540-no?authuser=1');">
+            <div class="container position-relative px-5 text-center text-white">
+              <div class="row gx-5 justify-content-center">
+                 <div class="col-lg-8">
+                    <h1 class="page-header-ui-title mb-3">Quốc Hương Store</h1>
+                    <p class="page-header-ui-text mb-0">Cung cấp các sản phẩm làm từ gỗ </p>
+                 </div>
+              </div>
+           </div>
+           <svg class="position-absolute bottom-0 start-50 translate-middle-x w-100"
+              style="height:3rem;"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 144.54 17.34"
+              preserveAspectRatio="none"
+              fill="#63323e">
+              <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+           </svg>
+        </header>
+{% block content %}
+
+{% endblock  %}
+
+
+<footer class="site-footer">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12 col-md-6">
+         <h6>Thông tin</h6>
+         <p class="text-justify">Xưởng tư nhân</p>
+       </div>
+
+       <div class="col-xs-6 col-md-3">
+         <h6>Danh Mục</h6>
+         <ul class="footer-links">
+           <li><a href="">Ghế gỗ</a></li>
+           <li><a href="">Lan Can</a></li>
+           <li><a href="">Giường gỗ</a></li>
+           <li><a href="">Tượng gỗ</a></li>
+           <li><a href="">Sản phẩm gia công</a></li>
+         </ul>
+       </div>
+
+       <div class="col-xs-6 col-md-3">
+         <h6>Truy cập nhanh</h6>
+         <ul class="footer-links">
+           <li><a href="">Thông tin cửa hàng</a></li>
+           <li><a href="">Liên hệ</a></li>
+           <li><a href="">Thắc mắc</a></li>
+           <li><a href="">Giỏ hàng</a></li>
+           <li><a href="">Sản phẩm</a></li>
+         </ul>
+       </div>
+     </div>
+     <hr>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8 col-sm-6 col-xs-12">
+         <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+      <a href="#">Cá Lang Thang</a>.
+         </p>
+       </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12">
+         <ul class="social-icons">
+           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+           <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+           <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+         </ul>
+       </div>
+     </div>
+   </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+/*Mobile Menu shop by category*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@600&family=Rokkitt:wght@100&display=swap');
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.atozdeals-mobile-section {
+    display: block;
+    margin-top: 50px;
+    vertical-align: top;
+    padding: 10px 20px 0;
+}
+
+.atozdeals-mobile-menu {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.atozdeals-mobile-menu.l-big {
+    font-size: 12px;
+}
+
+.atozdeals-mobile-menu.l-medium {
+    font-size: 8px;
+}
+
+.atozdeals-mobile-menu.l-small {
+    font-size: 12px;
+}
+
+.atozdeals-mobile-menu ul {
+    max-width: 100%;
+    border: 1px solid rgb(112, 182, 123);
+    border-radius: 1em;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.atozdeals-mobile-menu li {
+    width: 11.11%;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+
+.atozdeals-mobile-menu .icon {
+    display: block;
+    padding: 1em;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    border-radius: 5px;
+    overflow: hidden;
+    -moz-transition: color 0.4s ease 0.15s;
+    -o-transition: color 0.4s ease 0.15s;
+    -webkit-transition: color 0.4s ease;
+    -webkit-transition-delay: 0.15s;
+    transition: color 0.4s ease 0.15s;
+}
+
+.atozdeals-mobile-menu .icon span,
+.atozdeals-mobile-menu .icon:before {
+    position: relative;
+    display: block;
+    z-index: 5;
+    -moz-transition: -moz-transform 0.35s ease-in-out, text-shadow 0.35s ease-in-out;
+    -o-transition: -o-transform 0.35s ease-in-out, text-shadow 0.35s ease-in-out;
+    -webkit-transition: -webkit-transform 0.35s ease-in-out, text-shadow 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out, text-shadow 0.35s ease-in-out;
+}
+
+.atozdeals-mobile-menu .icon span {
+    width: calc(100% + 1.6em);
+    margin-left: -0.8em;
+    overflow: hidden;
+    font-size: small;
+}
+
+.atozdeals-mobile-menu .icon:before {
+    width: 2.4em;
+    font: normal 1.6em/1 FontAwesome;
+    color: #fff;
+    margin: 0.7em auto 1.2em;
+}
+
+.atozdeals-mobile-menu .icon:after {
+    content: "";
+    display: inline-block;
+    width: 14em;
+    height: 14em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -7em;
+    background-color: #fa411e;
+    z-index: 1;
+    border-radius: 100%;
+    transform-origin: 50% 7.5%;
+    -moz-transform: scale(0.28);
+    -ms-transform: scale(0.28);
+    -webkit-transform: scale(0.28);
+    transform: scale(0.28);
+    -moz-transition: -moz-transform 0.35s cubic-bezier(0.83, -0.6, 0.68, 0.99);
+    -o-transition: -o-transform 0.35s cubic-bezier(0.83, -0.6, 0.68, 0.99);
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.83, -0.6, 0.68, 0.99);
+    transition: transform 0.35s cubic-bezier(0.83, -0.6, 0.68, 0.99);
+}
+
+.atozdeals-mobile-menu .icon:hover {
+    color: #fff;
+}
+
+.atozdeals-mobile-menu .icon:hover:after {
+    -moz-transform: scale(1) translateY(-3.5em);
+    -ms-transform: scale(1) translateY(-3.5em);
+    -webkit-transform: scale(1) translateY(-3.5em);
+    transform: scale(1) translateY(-3.5em);
+}
+
+.atozdeals-mobile-menu [class*='music']:after,
+.atozdeals-mobile-menu [class*='map']:after {
+    background-color: #ff3d7f;
+}
+
+.atozdeals-mobile-menu [class*='bag']:after,
+.atozdeals-mobile-menu [class*='auto']:after {
+    background-color: #f22845;
+}
+
+.atozdeals-mobile-menu [class*='truck']:after,
+.atozdeals-mobile-menu [class*='auto']:after {
+    background-color: #a51d81;
+}
+
+.atozdeals-mobile-menu [class*='rocket']:after,
+.atozdeals-mobile-menu [class*='plane']:after {
+    background-color: #f3d328;
+}
+
+.atozdeals-mobile-menu.l-rounded .icon {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.atozdeals-mobile-menu.l-rounded .icon:after {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.atozdeals-mobile-menu.l-rounded .icon:hover:before {
+    -moz-transform: translateY(-0.2em);
+    -ms-transform: translateY(-0.2em);
+    -webkit-transform: translateY(-0.2em);
+    transform: translateY(-0.2em);
+    text-shadow: 0.1em 4px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0.1em 4px 0 0.3em rgba(0, 0, 0, 0.1);
+}
+
+.atozdeals-mobile-menu.l-rounded .icon:hover span {
+    -moz-transform: translateY(-1.3em);
+    -ms-transform: translateY(-1.3em);
+    -webkit-transform: translateY(-1.3em);
+    transform: translateY(-1.3em);
+}
+
+.atozdeals-mobile-menu.l-rounded .icon:hover:after {
+    -moz-transform: scale(0.46) translateY(-0.3em);
+    -ms-transform: scale(0.46) translateY(-0.3em);
+    -webkit-transform: scale(0.46) translateY(-0.3em);
+    transform: scale(0.46) translateY(-0.3em);
+    -moz-box-shadow: 0 0.2em 0 0.15em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0.2em 0 0.15em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2em 0 0.15em rgba(0, 0, 0, 0.1);
+}
+
+
+/*Mobile menu shop by category*/
